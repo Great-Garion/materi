@@ -4,18 +4,8 @@ function Todo() {
   const [todos, setTodos] = useState(["belajar react", "belajar state"]);
   const [inputTodo, setInputTodo] = useState("");
 
-  const [user, setUser] = useState({
-    username: "",
-    password: ""
-  });
-
   const handleChange = (event) => {
-    // cara langsung
     setInputTodo(event.target.value)
-
-    // cara destruktur
-    // let {value} = event.target
-    // setInputTodo(value)
   }
 
   const addTodo = () => {
