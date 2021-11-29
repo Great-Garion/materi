@@ -40,7 +40,6 @@ app.post("/movie" , (req, res) => {
   res.json("success added new movie")
 })
 
-
 app.listen(PORT, () => {
   console.log("Server running on port " + PORT);
 });
