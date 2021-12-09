@@ -35,7 +35,7 @@ module.exports = {
     try {
       let user = req.body;
 
-      const newUser = await User.create(user)
+      await User.create(user)
 
       res.json("user has been created")
 
