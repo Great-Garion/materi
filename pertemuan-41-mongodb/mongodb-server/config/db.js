@@ -1,7 +1,8 @@
+require("dotenv")
 const mongoose = require("mongoose")
 
-const URL_DB = 'mongodb+srv://auzan:auzan@mycluster.mkryk.gcp.mongodb.net/skilvul?retryWrites=true&w=majority'
+const DB_URL = process.env.DB_URL
 
-mongoose.connect(URL_DB);
+mongoose.connect(DB_URL);
 
 module.exports = mongoose
